@@ -2,9 +2,9 @@ import boto3
 import pyarrow.parquet as pq
 import pandas as pd
 import json
-# input file 
-file_object = open('0200813_00006 (2).json')
-compared_file = open('output (2).json')
+#  We need to compare two json files wit both the files have same  json structure 
+file_object = open('0200813_00006 (2).json') # your nested json file
+compared_file = open('output (2).json') # Your file to be compared with another file
 file1=json.load(file_object)
 #print(file1)
 file2=json.load(compared_file)
